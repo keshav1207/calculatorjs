@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,60px);
+    grid-template-rows: minmax(60px,auto)repeat(5,60px);
+    margin-top: 2em;
+    
+    
+}
+
+.operator,
+.equal{
+    background: yellow;
+    color: black;
+}
+
+button{
+    background: orange;
+}
+
+
+.container .span{
+    grid-column: span 2;
+}
+
+.screen{
+    grid-column: 1/-1;
+    background: black;
+    color: #fdfeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+
+
